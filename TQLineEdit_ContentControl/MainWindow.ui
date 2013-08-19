@@ -10,8 +10,14 @@
     <height>560</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>720</width>
+    <height>560</height>
+   </size>
+  </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>QLineEdit Content Control Test</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -23,7 +29,7 @@
        </font>
       </property>
       <property name="text">
-       <string>QLineEdit_ContentControl</string>
+       <string>QLineEdit Content Control Test</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
