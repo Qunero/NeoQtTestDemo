@@ -25,6 +25,10 @@ private slots:
 
     void on_lineEdit_inputMask_textChanged(const QString &arg1);
 
+    void on_pushButton_setValidator_clicked();
+
+    void on_pushButton_setInputMask_clicked();
+
 private:
     QValidator *pStrValidator;
     QString strInputMask;

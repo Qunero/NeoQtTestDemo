@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>720</width>
-    <height>560</height>
+    <height>660</height>
    </rect>
   </property>
   <property name="minimumSize">
@@ -210,9 +210,6 @@ p, li { white-space: pre-wrap; }
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QLineEdit" name="lineEdit_validator"/>
-           </item>
            <item row="1" column="0">
             <widget class="QLabel" name="label_3">
              <property name="text">
@@ -222,6 +219,23 @@ p, li { white-space: pre-wrap; }
            </item>
            <item row="1" column="1">
             <widget class="QLineEdit" name="lineEdit_inputMask"/>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_validator"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="pushButton_setValidator">
+             <property name="text">
+              <string>Set Validator</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QPushButton" name="pushButton_setInputMask">
+             <property name="text">
+              <string>Set InputMask</string>
+             </property>
+            </widget>
            </item>
           </layout>
          </item>
@@ -261,27 +275,88 @@ p, li { white-space: pre-wrap; }
       <property name="title">
        <string>Test Zone</string>
       </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <layout class="QGridLayout" name="gridLayout_2">
          <item row="0" column="0">
+          <widget class="QLabel" name="label_6">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="text">
+            <string>1. Your Validator</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_validator">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
+           <property name="text">
+            <string>2. Your InputMask</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLabel" name="label_inputMask">
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
           <widget class="QLabel" name="label_4">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
            <property name="text">
             <string>3. Input Test here</string>
            </property>
           </widget>
          </item>
-         <item row="0" column="1" colspan="2">
+         <item row="2" column="1">
           <widget class="QLineEdit" name="lineEdit_testInput"/>
          </item>
-         <item row="1" column="0" colspan="2">
+         <item row="3" column="0">
           <widget class="QLabel" name="label_5">
+           <property name="frameShape">
+            <enum>QFrame::NoFrame</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Plain</enum>
+           </property>
            <property name="text">
             <string>4. Filtered Text(results)</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="2">
+         <item row="3" column="1">
           <widget class="QLineEdit" name="lineEdit_testResult">
            <property name="readOnly">
             <bool>true</bool>
